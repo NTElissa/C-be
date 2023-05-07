@@ -1,0 +1,26 @@
+{
+  "name": "online-family-monitoring-expanse-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NTElissa/online-family-monitoring-expanse-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NTElissa/online-family-monitoring-expanse-system/issues"
+  },
+  "homepage": "https://github.com/NTElissa/online-family-monitoring-expanse-system#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.1"
+  }
+}
