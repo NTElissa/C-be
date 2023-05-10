@@ -1,5 +1,5 @@
 // Import app
-import app from "./app.js";
+import app from "./app";
 
 const PORT = process.env.PORT || 3000;
 // Listen to Port ( default: 3000 )
