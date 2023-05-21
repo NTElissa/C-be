@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
- 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
-    "dev": "npm run build && nodemon dist/server.js"
+    "dev": "npm run build && nodemon dist/server.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "make-seed": "npx sequelize-cli seed:generate --name",
+    "seed": "npx sequelize-cli db:seed:all",
+    "_seed": "npx sequelize-cli db:seed --seed",
+    "unseed": "npx sequelize-cli db:seed:undo:all",
+    "_unseed": "npx sequelize-cli db:seed:undo --seed",
+    "down": "npx sequelize-cli db:migrate:undo:all",
+    "_down": "npx sequelize-cli db:migrate:undo --to"
   },
   "repository": {
     "type": "git",
