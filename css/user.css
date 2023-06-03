@@ -1,72 +1,40 @@
-.activity {
-    margin: 150px 60px 40px 60px;
-  }a{
-    text-decoration: none;
-  }
-  
-  .title {
-    margin: 30px 30px 30px 30px;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  
-  .activity-data {
-    display: flex;
-    margin: 150px 60px 40px 60px;
-  }
-  
-  .activity-data .datanames {
-    padding-left: 100px;
-  }
-  
-  .activity-data .datanames span {
-    padding-left: 100px;
-  }
-  
-  .activity-data {
-    background-color: #ffffff;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  .activity-data img {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    border-radius: 30px;
-  }
-  
-  .activity-data:hover {
-    background-color: #777;
-    border-radius: 30px;
-  }
-  
-  .container {
-    width: 90%;
-    margin: auto;
-  }
-  
-  .header {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .content {
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  .footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .user-hover {
-    background-color: #4CAF50;
-    border-radius: 30px;
-  }
-  
+.outercontainer{
+  width: 96%;
+  background-color: black;
+  min-height: 9vh;
+  margin: 0 auto;
+  overflow-x: scroll;
+  position: relative;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.outercontainer::-webkit-scrollbar { display: none;}
+
+.innercontainer {
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  height: 80vh;
+  background-color:  black;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  width: 269px;
+  height: 80%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 10px;
+  margin-right: 24px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.item:last-child{
+  margin-right: 0px;
+}
