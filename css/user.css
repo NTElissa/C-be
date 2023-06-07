@@ -1,6 +1,6 @@
 .outercontainer{
   width: 96%;
-  background-color: black;
+  background-color: rgb(136, 130, 130);
   min-height: 9vh;
   margin: 0 auto;
   overflow-x: scroll;
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   padding: 5px 10px;
   height: 80vh;
-  background-color:  black;
+  background-color:  rgb(182, 174, 174);
 
   display: flex;
   flex-flow: row;
@@ -37,4 +37,6 @@
 
 .item:last-child{
   margin-right: 0px;
+}.userMore{
+  margin-top: 1;
 }
