@@ -1,22 +1,23 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _express = _interopRequireDefault(require("express"));
-var _dotenv = _interopRequireDefault(require("dotenv"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-// Imports
+const db = require('./database/models');
+const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config();
 
-// Sequelize configuration
-// dotenv.config();
 // App setup
-_dotenv.default.config();
-const app = (0, _express.default)();
+// Sequelize configuration
+const {
+  sequelize
+} = db;
+sequelize.authenticate().then(() => {
+  console.log('Connection has been established successfully.');
+}).catch(err => {
+  console.error('Unable to connect to the database:', err);
+});
+const app = express();
 
 // Routes
 
 // Export the app
-var _default = app;
-exports.default = _default;
+module.exports = app;
