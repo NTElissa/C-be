@@ -1,8 +1,8 @@
-import { sequelize, User } from '..models/models';
+import { sequelize, User } from '../database/models.js';
 import express from 'express';
 
 const app = express();
-app.use(express.json());
+
 
 const createUser = async (req, res) => {
   const { firstName, lastName, email, phoneNumber, position } = req.body;
