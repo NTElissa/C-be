@@ -1,12 +1,10 @@
-import db from './database/models';
+import db from "./database/models";
 import express from 'express';
 import dotenv from 'dotenv';
-import createUser from './routers/userRouter';
 
 dotenv.config();
 
-// App setup
-// Sequelize configuration
+
 const { sequelize } = db;
 sequelize
   .authenticate()
@@ -19,8 +17,10 @@ sequelize
 
 const app = express();
 
-// Routes
-// app.use('/api/')
-app.use('/api', createUser)
-// Export the app
+app.get("/", (req, res) => {
+  res.status(200).send(`
+<h1 style="text-align: center; margin-top: 20vh;"> my-brand  APIS</h1>
+`);
+});
+
 export default app;
